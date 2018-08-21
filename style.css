@@ -1,3 +1,7 @@
 .active{
     border: 1px solid red;
 }
+
+.point{
+    cursor: pointer;
+}
