@@ -12,19 +12,28 @@ window.onload = function () {
         }
     }
 
-    let test = new Test(30, 40);
+    let test = new Test(20, 30);
 
     console.log(test.age);
     console.log(test.height);
 
+
+
+
+
     class Test_2 extends Test{
-        super();
         constructor(){
+            super();
             this.length = 100;
         }
     }
 
     let test_2 = new Test_2();
+
+
+
     console.log(test_2.age);
+    console.log(test_2.height);
+    console.log(test_2.length);
 
 }
