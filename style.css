@@ -1,7 +1,23 @@
-.active{
-    border: 1px solid red;
+
+* {
+    box-sizing: border-box;
 }
 
-.point{
-    cursor: pointer;
+body {
+    margin: 0;
+}
+
+.gallary {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallary .photos img {
+    width: 100%;
+    display: none;
+}
+
+.gallary .photos img:nth-child(1){
+    display: block;
 }
