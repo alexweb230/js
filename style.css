@@ -1,3 +1,18 @@
 .active{
     border: 1px solid red;
 }
+
+.items{
+
+    display: flex;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: silver;
+    margin-right: 10px;
+}
+
+.test{
+    border: 1px solid red;
+}
