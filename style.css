@@ -1,3 +1,9 @@
 .active{
     border: 1px solid red;
 }
+
+#block{
+    width: 200px;
+    height: 100px;
+    background: green;
+}

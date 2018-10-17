@@ -6,17 +6,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<p class="box-1">
+    верхний левый угол
+    <br>
+    <input type="range" id="rtl" min="0" max="100" value="0" oninput="rang()">
+    <br>
+    <input type="text" id="ttl" value="0">
+</p>
+<p class="box-1">
+    верхний правый угол
+    <br>
+    <input type="range" id="rtr" min="0" max="100" value="0" oninput="rang()">
+    <br>
+    <input type="text" id="ttr" value="0">
+</p>
+<p class="box-1">
+    нижний правый угол
+    <br>
+    <input type="range" id="rbr" min="0" max="100" value="0" oninput="rang()">
+    <br>
+    <input type="text" id="tbr" value="0">
+</p>
+<p class="box-1">
+    нижний левый угол
+    <br>
+    <input type="range" id="rbl" min="0" max="100" value="0" oninput="rang()">
+    <br>
+    <input type="text" id="tbl" value="0">
+</p>
 
-<h1>test</h1>
-<div class="div"></div>
-
-<div class="items">
-    <div class="item">111</div>
-    <div class="item">222</div>
-    <div class="item">333</div>
-    <div class="item">444</div>
-</div>
-
+<div id="block"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="main.js"></script>
