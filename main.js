@@ -7,10 +7,6 @@ window.onload = function () {
     tabCont = document.getElementsByClassName('tabs-content');
     tab = document.getElementsByClassName('tab');
      hideTabsContent(1);
-
-
-
-
 }
 
 
