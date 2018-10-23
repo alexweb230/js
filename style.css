@@ -1,3 +1,24 @@
-.active{
-    border: 1px solid red;
+nav{}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav > ul > li{
+    display: inline-block;
+    border:1px solid;
+    position: relative;
+    cursor: pointer;
+    padding: 0 30px;
+    text-align: center;
+}
+nav ul li .submenu{
+    position: absolute;
+    top:19px;
+    left:0;
+    right: 0;
+    background-color: silver;
+    display: none;
 }

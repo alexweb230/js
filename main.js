@@ -1,98 +1,28 @@
 "use strict";
+    window.onload = function () {
+    document.getElementById('nav').onmouseover = function(event) {
+        let target = event.target;
 
-$(function () {
-
-    class Animal {
-        constructor(age) {
-            this.age = age;
-            this.length = 20;
+        if(target.className == 'menu-item'){
+            let sub = target.getElementsByClassName('submenu');
+            closeMenu();
+            sub[0].style.display = 'block';
         }
     }
-
-    class Cat extends Animal {
-        constructor(age) {
-            super(age);
-            this.mustache = true;
+    document.onmouseover = function (event) {
+        let target = event.target;
+        if(target.className != 'menu-item' && target.className != 'submenu'){
+            closeMenu()
         }
     }
-
-    class Dog extends Cat{
-        constructor(age) {
-            super(age);
-            this.col = "white";
-        }
-    }
-    let cat = new Cat(100);
-    let dog = new Dog(400);
-
-    console.log(cat.age);
-    console.log(dog.age);
-
-     const test = 50;
-     let box = 100;
-     box = "a";
-
-
-
-
-     console.log(test);
-     console.log(box);
-
-     timer();
-
-     let str = some('test', 1,2,3,1,1,400);
-
-     document.querySelector('.div').innerHTML = str;
-
-
-
-     let test_2 = (x) => x + 1;
-
-     console.log(test_2(2));
-
-
-     let items = document.querySelectorAll('.items .item');
-
-     for(let it of items){
-         console.log(it);
-         it.onclick = function (e){
-            this.classList.toggle('active');
-         }
-     }
-
-
-});
-
-
-function timer(time = 60) {
-    console.log(time);
 
 }
-
-function some(name, ...marks) {
-    console.log(name);
-    console.log(marks);
-    for(let m in marks){
-        console.log(m);
+function closeMenu() {
+    let subm = document.getElementsByClassName('submenu');
+    for(let i = 0; i < subm.length; i++){
+        subm[i].style.display = 'none';
     }
-    for(let m of marks){
-        console.log(m);
-    }
-
-    let res = `${name}  ${marks}`;
-
-    return res;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
