@@ -9,11 +9,13 @@ window.onload = function () {
      hideTabsContent(1);
 
 
+
+
 }
 
 
 function hideTabsContent(a) {
-    for (var i = a; a < tabCont.length; i++) {
+    for (var i = a; i < tabCont.length; i++) {
 
         tabCont[i].classList.remove('show');
         tabCont[i].classList.add('hide');
@@ -32,6 +34,7 @@ document.getElementById('tabs').onclick = function (event) {
         }
     }
 }
+
 function showTabsContent(b) {
     if (tabCont[b].classList.contains('hide')) {
         hideTabsContent(0);
