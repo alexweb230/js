@@ -1,3 +1,29 @@
-.active{
-    border: 1px solid red;
+
+#tabs .tab {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+#tabs .tab.bord {
+    border: 1px solid silver;
+    border-bottom: 1px solid transparent;
+    border-radius: 3px 3px 0 0;
+}
+
+#tabs .tabs-content{
+    border: 1px solid silver;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
 }
