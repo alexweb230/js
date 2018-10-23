@@ -1,113 +1,21 @@
-"use strict";
+let modal = document.getElementById('modal-box');
+let btn = document.getElementById('btn-modal');
+let span = document.getElementsByClassName('close')[0];
 
-$(function () {
-
-    class Animal {
-        constructor(age) {
-            this.age = age;
-            this.length = 20;
-        }
-    }
-
-    class Cat extends Animal {
-        constructor(age) {
-            super(age);
-            this.mustache = true;
-        }
-    }
-
-    class Dog extends Cat{
-        constructor(age) {
-            super(age);
-            this.col = "white";
-        }
-    }
-    let cat = new Cat(100);
-    let dog = new Dog(400);
-
-    console.log(cat.age);
-    console.log(dog.age);
-
-     const test = 50;
-     let box = 100;
-     box = "a";
-
-
-
-
-     console.log(test);
-     console.log(box);
-
-     timer();
-
-     let str = some('test', 1,2,3,1,1,400);
-
-     document.querySelector('.div').innerHTML = str;
-
-
-
-     let test_2 = (x) => x + 1;
-
-     console.log(test_2(2));
-
-
-     let items = document.querySelectorAll('.items .item');
-
-     for(let it of items){
-         console.log(it);
-         it.onclick = function (e){
-            this.classList.toggle('active');
-         }
-     }
-
-
-});
-
-
-function timer(time = 60) {
-    console.log(time);
-
+btn.onclick = function () {
+    modal.style.display = 'block';
+}
+span.onclick = function () {
+    modal.style.display = 'none';
 }
 
-function some(name, ...marks) {
-    console.log(name);
-    console.log(marks);
-    for(let m in marks){
-        console.log(m);
-    }
-    for(let m of marks){
-        console.log(m);
+window.onclick = function (event) {
+    let target = event.target;
+
+    if(target == modal){
+        modal.style.display = 'none';
     }
 
-    let res = `${name}  ${marks}`;
 
-    return res;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
