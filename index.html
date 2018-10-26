@@ -7,15 +7,26 @@
 </head>
 <body>
 
-<h1>test</h1>
-<div class="div"></div>
-
-<div class="items">
-    <div class="item">111</div>
-    <div class="item">222</div>
-    <div class="item">333</div>
-    <div class="item">444</div>
+<div class="wrapper">
+    <h1>to do list</h1>
+    <div class="info">
+        <div class="info-item">
+            <span class="info-item-text">Всего задач</span>
+            <span class="info-item-text-number" id="js-all-task"></span>
+        </div>
+        <div class="info-item">
+            <span class="info-item-text">Выполнено задач</span>
+            <span class="info-item-text-number" id="js-done-task"></span>
+        </div>
+    </div>
+    <div class="app-body">
+        <ul class="list" id="app__list"></ul>
+    </div>
+    <div class="app-footer">
+        <input type="text" class="input"  id="app__task-new">
+    </div>
 </div>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
