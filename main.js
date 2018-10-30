@@ -2,7 +2,14 @@ let text = document.getElementById('text'),
     inputWrap = document.getElementById('inputwrap'),
     input = document.getElementById('input'),
     inputWidth,
-    textWidth;
+    textWidth,
+
+    // inputPadding = window.getComputedStyle(input).getPropertyValue('border');
+
+    inputPadding = input.clientWidth;
+
+console.log(inputPadding);
+
 
 input.addEventListener("keyup", function () {
     text.innerHTML = this.value;
