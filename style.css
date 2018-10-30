@@ -1,0 +1,27 @@
+.wrapper{
+    margin: auto;
+    max-width:500px;
+    width: 100%;
+}
+
+.progres-line{
+    background-color: #2fc54d;
+    bottom: 0;
+    color:#fff;
+    top:0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+
+
+}
+
+.progress-line-bg{
+    background: #ccc;
+    border-radius:10px;
+    height:20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
