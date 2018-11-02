@@ -1,3 +1,14 @@
-.active{
-    border: 1px solid red;
+.content{
+    padding: 0 18px;
+    background: silver;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.btn{
+    width: 100%;
+}
+p{
+    margin: 0;
 }
