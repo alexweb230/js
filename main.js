@@ -6,8 +6,21 @@ const TypeWriter = function (txtElement, words, wait = 3000) {
     this.wait = wait;
     this.wordIndex = 0;
     this.txt = '';
-    this.isDeleting = false;
+    this.isDeleting = false;e3
     this.type();
 }
 
-document.addEventListener('DOMContentLoader', init);
+document.addEventListener('DOMContentLoaded', init);
+
+
+function init() {
+    let txtElement = document.querySelector('.text'),
+        words = JSON.parse(txtElement.getAttribute('data-words')),
+        wait = txtElement.getAttribute('data-wait');````
+
+
+
+    console.log(words);
+
+
+}
