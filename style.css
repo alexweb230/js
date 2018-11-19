@@ -1,0 +1,16 @@
+form{
+    width: 400px;
+    margin: auto;
+    padding-top: 100px;
+}
+input,
+textarea,
+select{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+textarea{
+    height: 100px;
+}
