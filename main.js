@@ -1,27 +1,28 @@
 let forms = document.getElementsByTagName('form');
 
-for(let i = 0; i < forms.length; i++){
-   forms[i].addEventListener('submit', validator);
-}
-
-
-class Rules{
-    constructor(){
-
-
-    }
-
+for(let form at forms){
+   form[i].addEventListener('submit', function () {
+       console.log(form[i]);
+   });
 
 }
 
 
+// class Rules{
+//     constructor(){
+//        email =
+//
+//     }
+//
+//
+// }
 
 
 
-function validator() {
-
-}
 
 
 
- console.log(Rules.test);
+
+
+
+ console.log();
