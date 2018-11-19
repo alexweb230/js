@@ -5,9 +5,13 @@ for(let i = 0; i < forms.length; i++){
 }
 
 
-class Rules = {
-    email: /^\w{1,}@\w{1,}\w{2,}$/,
-    test: "11111"
+class Rules{
+    constructor(){
+
+
+    }
+
+
 }
 
 
@@ -15,9 +19,9 @@ class Rules = {
 
 
 function validator() {
-    console.log(Rules.test);
+
 }
 
 
 
- console.log();
+ console.log(Rules.test);
