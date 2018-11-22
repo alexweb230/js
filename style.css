@@ -1,0 +1,13 @@
+.input.error .field{
+    border: 2px solid red;
+}
+.input.error .message{
+    color: red;
+}
+
+.input.error .success{
+    border: 1px solid green;
+}
+.input.error .success{
+    color: green;
+}

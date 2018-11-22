@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <title>js</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
+<form action="#" id="myForm">
+    <div class="input">
+        <label for="inp-1">input-1</label>
+        <input
+                type="text"
+                name="inp-1"
+                id="inp-1"
+                class="field"
+                data-error="вы превысели лимит"
+                data-success="сообщение отправлено">
+        <div class="message"></div>
+    </div>
+    <button>submit</button>
+    <button type="reset">reset</button>
+</form>
+<script>
+    var v = new Validator({
+        idEl,
+        customRules
+    })
+</script>
 
-<h1>test</h1>
-<div class="div"></div>
-
-<div class="items">
-    <div class="item">111</div>
-    <div class="item">222</div>
-    <div class="item">333</div>
-    <div class="item">444</div>
-</div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
 </body>
 </html>
+
+
