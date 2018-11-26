@@ -1,7 +1,27 @@
+var validatorMethods = {
+    isNotEmpty: function (el) {
+        if(el.value == ''){
+            return false;
+        }
+        return true;
+    },
+    isPattern: function (el, pattrn) {
+        return pattrn.test(el.value);
+
+
+
+}
+
+
+
 function Validator(settings) {
 
     var formEl = document.getElementById(settings.id);
     var formFields = formEl.elements;
+    var errors = [];
+    var rulesPattern = {
+        email: /^\w{1,}@\w{1,}\.\w{2,}$/,
+    }
 
     var showError = function (el) {
         el.parentNode.classList.remove('success');
@@ -13,6 +33,29 @@ function Validator(settings) {
         el.parentNode.classList.remove('error');
         el.parentNode.classList.add('success');
         el.nextElementSibling.innerHTML = el.dataset.success;
+    }
+
+    var isValid = function () {
+
+    }
+
+    var checkIt = function () {
+
+        if(isValid()){
+            showSuccess(this);
+            for(var i = 0; i < errors.length; i++){
+                if(errors[i].el == this){
+                    delete(errors[i]);
+                }
+            }
+        }else{
+            showError(this);
+            errors.push({
+                el: this,
+
+            })
+        }
+
     }
 
     //init
