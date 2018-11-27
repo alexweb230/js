@@ -1,6 +1,6 @@
 var validatorMethods = {
     isNotEmpty: function (el) {
-        if(el.value == ''){
+        if (el.value == '') {
             return false;
         }
         return true;
@@ -9,9 +9,15 @@ var validatorMethods = {
         return pattrn.test(el.value);
 
 
-
+    },
+    
+    isContains: function (el, el2) {
+        if(el.value == el2.value){
+            return  true;
+        }
+        return false;
+    }
 }
-
 
 
 function Validator(settings) {
@@ -21,6 +27,7 @@ function Validator(settings) {
     var errors = [];
     var rulesPattern = {
         email: /^\w{1,}@\w{1,}\.\w{2,}$/,
+        tel: /^\+38\(\d{3}\)\d{7}$/,
     }
 
     var showError = function (el) {
@@ -41,14 +48,14 @@ function Validator(settings) {
 
     var checkIt = function () {
 
-        if(isValid()){
+        if (isValid()) {
             showSuccess(this);
-            for(var i = 0; i < errors.length; i++){
-                if(errors[i].el == this){
+            for (var i = 0; i < errors.length; i++) {
+                if (errors[i].el == this) {
                     delete(errors[i]);
                 }
             }
-        }else{
+        } else {
             showError(this);
             errors.push({
                 el: this,
@@ -60,8 +67,8 @@ function Validator(settings) {
 
     //init
 
-    for(var i  = 0; i < formFields.length; i++){
-        if(formFields[i].tagName == 'BUTTON'){
+    for (var i = 0; i < formFields.length; i++) {
+        if (formFields[i].tagName == 'BUTTON') {
             continue;
         }
         formFields[i].addEventListener('change', checkIt);
