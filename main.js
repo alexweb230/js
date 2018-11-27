@@ -16,7 +16,11 @@ window.onload = function () {
 
 
     function Validator() {
-        console.log(btnForm);
+        if(formElements.val == ''){
+            console.log('test');
+        }
+         console.log('no-test');
+
     }
 }
 
