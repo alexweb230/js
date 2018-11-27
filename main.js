@@ -16,10 +16,16 @@ window.onload = function () {
 
 
     function Validator() {
-        if(formElements.val == ''){
-            console.log('test');
+        for(let i = 0;  i < formElements.length; i++){
+            if(formElements[i].value === ''){
+                formElements[i].nextSibling
+            }
+
         }
-         console.log('no-test');
+
+
+
+
 
     }
 }
