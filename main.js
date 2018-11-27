@@ -1,8 +1,11 @@
 
 
 window.onload = function () {
-   let formElements = document.forms[0].elements;
-   let formElements = document.forms[0].elements.tagName();
+    let form = document.forms[0];
+    let formElements = document.forms[0].elements;
+    let btnForm = document.forms[0].elements[0].querySelector('.btn-form');
+
+    btnForm.addEventListener('click', Validator);
 
 
 
@@ -12,6 +15,9 @@ window.onload = function () {
 
 
 
+    function Validator() {
+        console.log(btnForm);
+    }
 }
 
 
