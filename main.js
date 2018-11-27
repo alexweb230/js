@@ -74,4 +74,8 @@ function Validator(settings) {
         formFields[i].addEventListener('change', checkIt);
     }
 
+    for(var prop in settings.pattern){
+        rulesPattern[prop] = settings.pattern[prop]
+    }
+
 }
