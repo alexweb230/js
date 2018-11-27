@@ -20,4 +20,5 @@
 }
 .form .input-block .error.active{
     display: block !important;
+    color: red;
 }

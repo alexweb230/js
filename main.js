@@ -19,14 +19,8 @@ window.onload = function () {
             } else {
                 console.log('ne pusto');
             }
-
-            // console.log(formElements[i]);
         }
-
-
     }
-
-
 }
 
 
