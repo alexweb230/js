@@ -14,3 +14,10 @@
 .form .input-block input {
     width: 100%;
 }
+
+.form .input-block .error{
+    display: none;
+}
+.form .input-block .error.active{
+    display: block !important;
+}
