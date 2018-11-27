@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.form{
+    width:600px;
+    margin: auto;
+
+}
+
+.form .input-block{
+    margin-bottom: 20px;
+}
+
+.form .input-block input {
+    width: 100%;
+}
