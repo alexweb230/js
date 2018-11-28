@@ -4,6 +4,7 @@ window.onload = function () {
     let btn = document.querySelector('.btn-form');
 
 
+
     btn.addEventListener('click', Validator);
 
     function Validator() {
