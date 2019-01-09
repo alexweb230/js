@@ -17,8 +17,9 @@ window.onload = function () {
                 formElements[i].nextElementSibling.classList.add('active');
 
 
-            } else {
+            } else if (!formElements[i].value == ''){
                 console.log('ne pusto');
+                formElements[i].nextElementSibling.classList.remove('active');
             }
         }
     }
